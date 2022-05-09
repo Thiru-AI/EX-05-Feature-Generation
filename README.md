@@ -188,3 +188,16 @@ df5
 ![12](https://user-images.githubusercontent.com/94980741/167472368-160131b4-d36a-4f81-b37c-7c01fa566d27.png)
 ![13](https://user-images.githubusercontent.com/94980741/167472407-99920a3a-d7b9-4070-aa7b-6429b98e7486.png)
 ![14](https://user-images.githubusercontent.com/94980741/167472427-b15da776-fb16-4179-9ef3-7407a399b2ce.png)
+
+# Titanic.csv
+![15](https://user-images.githubusercontent.com/94980741/167472622-c4a04f8f-4849-4b86-8eef-2d62febb4c8b.png)
+![16](https://user-images.githubusercontent.com/94980741/167472671-9f8b849d-ba6d-4e75-8a73-c96c46339600.png)
+![17](https://user-images.githubusercontent.com/94980741/167472697-41a81c5e-8961-4ce7-b8e2-a35e9bba2bee.png)
+![19](https://user-images.githubusercontent.com/94980741/167472740-e01c1837-90db-49f1-ac4b-2764f4a56849.png)
+![20](https://user-images.githubusercontent.com/94980741/167472771-2449e19f-6f88-4acb-8e16-a56bf60f8685.png)
+![18](https://user-images.githubusercontent.com/9498074![21](https://user-images.githubusercontent.com/94980741/167472799-f4003435-c1a8-49bb-82a8-97def31b864f.png)
+![21](https://user-images.githubusercontent.com/94980741/167472876-1ac62be1-4d7b-46aa-8825-48deaa248c25.png)
+
+# Result:
+The given data and perform Feature Generation process and save the data to a file has been successfully read.
+
