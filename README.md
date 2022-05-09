@@ -18,10 +18,9 @@ Apply Feature Generation techniques to all the feature of the data set
 ### STEP 4
 Save the data to the file
 
-~~
 # CODE
-
-#Encoding Data .csv
+~~~
+###Encoding Data .csv
 import pandas as pd
 df=pd.read_csv("Encoding Data.csv")
 df
@@ -59,5 +58,5 @@ from sklearn.preprocessing import StandardScaler
 ss=StandardScaler()
 df5=pd.DataFrame(ss.fit_transform(df4),columns=['id','bin_1','bin_2','nom_0','ord_2'])
 df5
-
+~~~
 # OUPUT
