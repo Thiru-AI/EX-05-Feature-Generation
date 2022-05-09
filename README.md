@@ -22,6 +22,9 @@ Save the data to the file
 
 ## Encoding Data.csv
 ~~~
+DEVELOPED BY: Thirugnanamoorthi G
+REGISTER NUMBER: 212221230117
+
 import pandas as pd
 df=pd.read_csv("Encoding Data.csv")
 df
