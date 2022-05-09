@@ -178,4 +178,13 @@ df5
 ![5](https://user-images.githubusercontent.com/94980741/167471971-b398b63b-ee6b-4a80-9445-8bbb15088497.png)
 ![6](https://user-images.githubusercontent.com/94980741/167471982-e2d0ca27-184a-4900-bd33-ffb31a049e0f.png)
 
+# Data.csv
+![7](https://user-images.githubusercontent.com/94980741/167472292-177b9684-c034-4ecf-b870-4cc960781e4f.png)
+![8](https://user-images.githubusercontent.com/94980741/167472306-742eddab-d52f-400e-a1a2-392c5458d1f4.png)
+![9](https://user-images.githubusercontent.com/94980741/167472319-90906fae-40c5-4861-b563-14d83be84728.png)
+![10](https://user-images.githubusercontent.com/94980741/167472338-98a702cd-7ccd-442d-9a54-d3c5cca1f1c9.png)
+![11](https://user-images.githubusercontent.com/94980741/167472357-f084172e-1dc6-4a6b-ac9c-b13a237e3035.png)
 
+![12](https://user-images.githubusercontent.com/94980741/167472368-160131b4-d36a-4f81-b37c-7c01fa566d27.png)
+![13](https://user-images.githubusercontent.com/94980741/167472407-99920a3a-d7b9-4070-aa7b-6429b98e7486.png)
+![14](https://user-images.githubusercontent.com/94980741/167472427-b15da776-fb16-4179-9ef3-7407a399b2ce.png)
