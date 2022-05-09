@@ -60,4 +60,56 @@ ss=StandardScaler()
 df5=pd.DataFrame(ss.fit_transform(df4),columns=['id','bin_1','bin_2','nom_0','ord_2'])
 df5
 ~~~
+# Data.csv
+~~~
+import pandas as pd
+df=pd.read_csv("data.csv")
+df
+
+df1=df.copy()
+be=BinaryEncoder()
+be.fit_transform(df1[["bin_1"]])
+df1["bin_1"]=be.fit_transform(df1[["bin_1"]])
+df1
+
+df2=df1.copy()
+be2=BinaryEncoder()
+be2.fit_transform(df2[["bin_2"]])
+df2["bin_2"]=be2.fit_transform(df2[["bin_2"]])
+df2
+
+df3=df2.copy()
+le=LabelEncoder()
+le.fit_transform(df3[["City"]])
+df3["City"]=le.fit_transform(df3[["City"]])
+oe=OrdinalEncoder()
+
+df4=df3.copy()
+df4["Ord_1"]=oe.fit_transform(df4[["Ord_1"]])
+df4
+
+df5=df4.copy()
+df5["Ord_2"]=oe.fit_transform(df5[["Ord_2"]])
+df5
+
+from sklearn.preprocessing import StandardScaler
+ss=StandardScaler()
+df6=pd.DataFrame(ss.fit_transform(df5),columns=['id','bin_1','bin_2','City','Ord_1','Ord_2','Target'])
+df6
+
+from sklearn.preprocessing import MinMaxScaler
+scaler=MinMaxScaler()
+df7=pd.DataFrame(scaler.fit_transform(df6),columns=['id','bin_1','bin_2','City','Ord_1','Ord_2','Target'])
+df7
+
+from sklearn.preprocessing import MaxAbsScaler
+maxabsscaler=MaxAbsScaler()
+df8=pd.DataFrame(maxabsscaler.fit_transform(df7),columns=['id','bin_1','bin_2','City','Ord_1','Ord_2','Target'])
+df8
+
+from sklearn.preprocessing import RobustScaler
+rscaler = RobustScaler()
+df9=pd.DataFrame(rscaler.fit_transform(df8),columns=['id','bin_1','bin_2','City','Ord_1','Ord_2','Target'])
+df9
+~~~
 # OUPUT
