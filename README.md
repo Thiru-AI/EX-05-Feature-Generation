@@ -112,4 +112,70 @@ rscaler = RobustScaler()
 df9=pd.DataFrame(rscaler.fit_transform(df8),columns=['id','bin_1','bin_2','City','Ord_1','Ord_2','Target'])
 df9
 ~~~
+# Titanic Data set
+~~~
+import pandas as pd
+df=pd.read_csv("titanic_dataset.csv")
+df
+
+del df["Name"]
+del df["Cabin"]
+del df["Ticket"]
+df
+
+df1=df.copy()
+from sklearn.preprocessing  import LabelEncoder , OrdinalEncoder
+from sklearn.preprocessing import StandardScaler as sc
+from category_encoders import BinaryEncoder
+be=BinaryEncoder()
+df["Age"]=df["Age"].fillna(df["Age"].median())
+df
+
+df["Embarked"]=df["Embarked"].fillna(df["Embarked"].mode()[0])
+df
+
+oe=OrdinalEncoder ()
+oe.fit_transform(df[["Embarked"]])
+
+embark=['S','C','Q']
+emb=OrdinalEncoder(categories=[embark])
+emb
+
+emb.fit_transform(df[['Embarked']])
+df["Embarked"]=emb.fit_transform(df[["Embarked"]])
+df
+
+be=BinaryEncoder()
+newdata=be.fit_transform(df1["Sex"])
+newdata
+
+from sklearn.preprocessing import MinMaxScaler
+scaler=MinMaxScaler()
+df2=pd.DataFrame(scaler.fit_transform(df1),columns=['Passenger','Survived','Pclass','Sex','Age','SibSp','Parch','Fare','Embarked'])
+df2
+
+from sklearn.preprocessing import StandardScaler
+ss=StandardScaler()
+df3=pd.DataFrame(ss.fit_transform(df2),columns=['Passenger','Survived','Pclass','Sex','Age','SibSp','Parch','Fare','Embarked'])
+df3
+
+from sklearn.preprocessing import MaxAbsScaler
+maxabsscaler=MaxAbsScaler()
+df4=pd.DataFrame(maxabsscaler.fit_transform(df3),columns=['Passenger','Survived','Pclass','Sex','Age','SibSp','Parch','Fare','Embarked'])
+df4
+
+from sklearn.preprocessing import RobustScaler
+rscaler = RobustScaler()
+df5=pd.DataFrame(rscaler.fit_transform(df4),columns=['Passenger','Survived','Pclass','Sex','Age','SibSp','Parch','Fare','Embarked'])
+df5
+~~~
 # OUPUT
+
+![1](https://user-images.githubusercontent.com/94980741/167471878-3f6b6ae0-c454-48a3-8dfc-49f663544664.png)
+![2](https://user-images.githubusercontent.com/94980741/167471914-197cede4-9427-4476-b3ba-82acf007b94c.png)
+![3](https://user-images.githubusercontent.com/94980741/167471939-018f2e1c-35c8-44cd-bc74-1204ba21c80b.png)
+![4](https://user-images.githubusercontent.com/94980741/167471955-65d21d0e-fc50-46b3-aee0-8027d2f0601c.png)
+![5](https://user-images.githubusercontent.com/94980741/167471971-b398b63b-ee6b-4a80-9445-8bbb15088497.png)
+![6](https://user-images.githubusercontent.com/94980741/167471982-e2d0ca27-184a-4900-bd33-ffb31a049e0f.png)
+
+
