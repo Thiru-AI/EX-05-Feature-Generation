@@ -19,8 +19,9 @@ Apply Feature Generation techniques to all the feature of the data set
 Save the data to the file
 
 # CODE
+
+##Encoding Data .csv
 ~~~
-###Encoding Data .csv
 import pandas as pd
 df=pd.read_csv("Encoding Data.csv")
 df
