@@ -20,7 +20,7 @@ Save the data to the file
 
 # CODE
 
-##Encoding Data .csv
+## Encoding Data.csv
 ~~~
 import pandas as pd
 df=pd.read_csv("Encoding Data.csv")
